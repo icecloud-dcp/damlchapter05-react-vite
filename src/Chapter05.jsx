@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import './App.css'
 
 /**
  * Chapter 5: Data Visualization — Single Page App (Senior University Level)
