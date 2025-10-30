@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import './App.css'
-
+import './index.css'
 /**
  * Chapter 5: Data Visualization — Single Page App (Senior University Level)
  * Runnable Python examples with Pyodide + Matplotlib/Seaborn in-browser.
