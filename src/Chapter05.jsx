@@ -606,11 +606,11 @@ export default function App() {
             <div className="h-10 w-10 rounded-2xl bg-indigo-600/80 shadow" />
             <div>
               <h1 className="text-lg font-semibold">Chapter 5: Data Visualization</h1>
-              <p className="text-xs text-gray-300">Senior Level • 80-minute lecture</p>
+              <p className="text-sm text-gray-300">Senior Level • 80-minute lecture</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span className="rounded-lg bg-gray-800 px-3 py-1 text-sm ring-1 ring-white/10">⏱ {display}</span>
+            <span className="rounded-lg bg-gray-900 px-3 py-1 text-sm ring-1 ring-white/10">⏱ {display}</span>
             <button
               onClick={() => setRunning((s) => !s)}
               className="rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-emerald-500"
@@ -632,23 +632,23 @@ export default function App() {
         <nav className="hidden md:block">
           <div className="sticky top-[4.5rem] space-y-2">
             <div className="rounded-2xl border border-white/10 bg-gray-900/60 p-3">
-              <p className="mb-2 text-sm font-semibold text-gray-200">Outline</p>
+              <p className="mb-2 text-lg font-semibold text-gray-200">Outline</p>
               <ul className="space-y-1 text-sm">
                 {toc.map((t) => (
                   <li key={t.id}>
                     <a
                       href={`#${t.id}`}
-                      className="block rounded-lg px-2 py-1 text-gray-300 hover:bg-gray-800 hover:text-white"
+                      className="block rounded-lg px-2 py-1 text-gray-500 hover:bg-gray-800 hover:text-white"
                     >
                       {t.label}
-                      {t.dur ? <span className="ml-2 text-xs text-gray-400">({t.dur}m)</span> : null}
+                      {t.dur ? <span className="ml-2 text-sm text-gray-400">({t.dur}m)</span> : null}
                     </a>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="rounded-2xl border border-white/10 bg-gray-900/60 p-3">
-              <p className="mb-2 text-sm font-semibold text-gray-200">Study Tips</p>
+              <p className="mb-2 text-lg font-semibold text-gray-200">Study Tips</p>
               <ul className="list-disc pl-5 text-sm text-gray-300">
                 {studyTips.map((s, i) => (
                   <li key={i} className="mb-1">{s}</li>
@@ -661,7 +661,7 @@ export default function App() {
         {/* Content */}
         <div className="space-y-6">
           <Section id="intro" title="1) Introduction to Data Visualization" duration={10}>
-            <p className="mb-3 text-sm text-gray-300">
+            <p className="mb-3 text-lg text-gray-300">
               Visualization represents data graphically to reveal trends, patterns, and outliers. In Python, we rely on
               <span className="mx-1 rounded bg-gray-800 px-1.5 py-0.5">Matplotlib</span> as the foundation and
               <span className="mx-1 rounded bg-gray-800 px-1.5 py-0.5">Seaborn</span> for statistical high-level plots.
